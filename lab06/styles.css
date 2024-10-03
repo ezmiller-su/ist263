@@ -1,0 +1,7 @@
+body {font-family: 'Trebuchet MS', sans-serif;}
+h1, h2 {color: #800000;}
+table, th {border: 1px solid black;}
+.evenrow {background-color: #2F4F4F;}
+
+h1 {font-size: 3em;}
+h2 {font-size: 1.5em;}
