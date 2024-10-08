@@ -1,0 +1,11 @@
+html {background-color: #F5F5F5}
+
+nav {background-color: #48CFCB}
+nav a {color: #F5F5F5;}
+nav a:hover {background-color: #229799;}
+nav {padding: 10px;}
+nav {margin-bottom: 30px}
+
+html {color: #424242}
+link {color: #229799}
+h1,h2,h3,h4 {color: #48CFCB}
