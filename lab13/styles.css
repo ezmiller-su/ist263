@@ -1,6 +1,6 @@
 html {background-color: #F5F5F5}
 
-nav {background-color: #48CFCB; border-radius: 1em;}
+nav {background-color: #24605D; border-radius: 1em;}
 nav a, nav span {color: #F5F5F5;}
 nav a:hover {background-color: #229799; border-radius: 0.2em;}
 nav {padding: 10px;}
@@ -8,7 +8,7 @@ nav {margin-bottom: 30px}
 
 html {color: #424242}
 link {color: #229799}
-h1,h2,h3,h4 {color: #48CFCB}
+h1,h2,h3,h4 {color: #24605D}
 
 @media only screen and (max-width: 600px) {
     nav a {size: 100%; display: block; margin-top: 0.5em; margin-bottom: 0.5em;}
