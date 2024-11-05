@@ -4,33 +4,59 @@
         <meta charset="UTF-8">
         <title>Store</title>
         <link rel="stylesheet" href="../project6/styles.css">
+        <style>
+            .stock {
+                display: flex;
+                justify-content: space-evenly;
+            }
+            .shirt, .hat {
+                padding: 10px;
+            }
+            .main p {text-align: center;}
+            
+            .shirt #back {display: none;}
+            .shirt:hover #front {display: none;}
+            .shirt:hover #back {display: inline;}
+            .shirt:hover p {text-decoration: underline;}
+            
+            .hat #back {display: none;}
+            .hat:hover #front {display: none;}
+            .hat:hover #back {display: inline;}
+            .hat:hover p {text-decoration: underline;}
+
+        </style>
     </head>
     
     <body>
-        <img src="../media/comstocklogo.png" class="logo" alt="Logo" width="300">
-
-        <nav>
-            <a href="index.html">Home</a> | <a href="store.html">Store</a> | <a href="contact.html">Contact</a>
-        </nav>
+        <header class="header">
+            <div class="logo">
+                <a href="index.html" target="_top"> <img src="../media/comstocklogo.png" alt="Logo" width="300"></a>
+            </div>
+            <nav>
+                <a href="index.html">HOME</a>
+                <a href="store.html">STORE</a>
+                <a href="contact.html">CONTACT</a>
+            </nav>
+        </header>
         
-        <main>
+        <main class="main">
             <h1>Fall 2024 Line</h1>
-            <div>
-                <div>
-                    <img src="../media/shirt.png" alt="" height="200"><br>
-                    <span>Shirt</span><br>
-                    <span>$20.00</span><br>
+            <div class="stock">
+                <div class="shirt">
+                    <img src="../media/shirtfront.png" id="front" alt="Shirt Front" height="400" width="300">
+                    <img src="../media/shirtback.png" id="back" alt="Shirt Back" height="400" width="300">
+                    <p>Shirt <br> $20.00</p>
                 </div>
-                <div>
-                    <img src="../media/hat.png" alt="" height="200"><br>
-                    <span>Hat</span><br>
-                    <span>$20.00</span><br>
+                <div class="hat">
+                    <img src="../media/hatfront.png" id="front" alt="Hat Front" height="400" width="300">
+                    <img src="../media/hatback.png" id="back" alt="Hat Back" height="400" width="300">
+                    <p>Hat <br> $20.00</p>
                 </div>
             </div>
         </main>
+        <footer>
+            <hr>
+            &copy; 2024, Comstock Clothing
+        </footer>
     </body>
-    <footer>
-        <hr>
-        &copy; 2024, Comstock Clothing
-    </footer>
 </html>

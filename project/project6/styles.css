@@ -1,2 +1,41 @@
-html {background-color: #7B7554;}
-h1, h2, h3, p {color: #F5E0B7;}
+h1, h2, h3 {color: #7B7554;}
+
+html {
+    background-color: #E8E8E8;
+    font-family: "SF Mono", Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+    letter-spacing: 1.05px;
+}
+
+.header {
+    background: #E8E8E8;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 150px;
+}
+
+.logo, h1 {display: flex; justify-content: space-evenly; margin: 1em;}
+
+nav {
+    display: flex;
+}
+
+nav a {
+    flex: 1;
+    background-color: #000000;
+    color: #E8E8E8;
+    text-decoration: none;
+    padding: 1em;
+    display: inline-flex;
+    justify-content: space-evenly;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    background-color: #1c1c1c;
+}
+
+.main {
+    padding-top: 150px;
+}
