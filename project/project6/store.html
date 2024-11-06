@@ -14,14 +14,14 @@
             }
             .main p {text-align: center;}
             
-            .shirt #back {display: none;}
-            .shirt:hover #front {display: none;}
-            .shirt:hover #back {display: inline;}
+            .shirt .back {display: none;}
+            .shirt:hover .front {display: none;}
+            .shirt:hover .back {display: inline;}
             .shirt:hover p {text-decoration: underline;}
             
-            .hat #back {display: none;}
-            .hat:hover #front {display: none;}
-            .hat:hover #back {display: inline;}
+            .hat .back {display: none;}
+            .hat:hover .front {display: none;}
+            .hat:hover .back {display: inline;}
             .hat:hover p {text-decoration: underline;}
 
         </style>
@@ -43,13 +43,13 @@
             <h1>Fall 2024 Line</h1>
             <div class="stock">
                 <div class="shirt">
-                    <img src="../media/shirtfront.png" id="front" alt="Shirt Front" height="400" width="300">
-                    <img src="../media/shirtback.png" id="back" alt="Shirt Back" height="400" width="300">
+                    <img src="../media/shirtfront.png" class="front" alt="Shirt Front" height="400" width="300">
+                    <img src="../media/shirtback.png" class="back" alt="Shirt Back" height="400" width="300">
                     <p>Shirt <br> $20.00</p>
                 </div>
                 <div class="hat">
-                    <img src="../media/hatfront.png" id="front" alt="Hat Front" height="400" width="300">
-                    <img src="../media/hatback.png" id="back" alt="Hat Back" height="400" width="300">
+                    <img src="../media/hatfront.png" class="front" alt="Hat Front" height="400" width="300">
+                    <img src="../media/hatback.png" class="back" alt="Hat Back" height="400" width="300">
                     <p>Hat <br> $20.00</p>
                 </div>
             </div>
