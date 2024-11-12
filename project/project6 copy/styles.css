@@ -1,0 +1,64 @@
+html {
+    scroll-behavior: smooth;
+    background-color: #fe4600;
+    font-family: "SF Mono", Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+    letter-spacing: 1.05px;
+}
+
+#home, #store, #contact {
+    height: 1000px;
+    padding-top: 164px;
+}
+
+.header {
+    background: linear-gradient(115deg,#00d0ff,#09f 20%,#c95eff 42%,#ff2569 63%,#ff8300 83%,#ffb000);
+
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 164px;
+}
+
+.logo, h1 {display: flex; justify-content: space-evenly; margin: 1em;}
+
+nav {display: flex;}
+
+nav a {
+    flex: 1;
+    background-color: #000000;
+    
+    color: #E8E8E8;
+    text-decoration: none;
+    padding: 1em;
+    display: inline-flex;
+    justify-content: space-evenly;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    background-color: #808080;
+}
+
+.stock {
+    display: flex;
+    justify-content: space-evenly;
+}
+.shirt, .hat {padding: 10px;}
+
+.store p {text-align: center;}
+
+.home p, {text-align: center;}
+
+.home h2 {size: 5em;}
+
+.shirt .back {display: none;}
+.shirt:hover .front {display: none;}
+.shirt:hover .back {display: inline;}
+.shirt:hover p {text-decoration: underline;}
+
+.hat .back {display: none;}
+.hat:hover .front {display: none;}
+.hat:hover .back {display: inline;}
+.hat:hover p {text-decoration: underline;}
+
