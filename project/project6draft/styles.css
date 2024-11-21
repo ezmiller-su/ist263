@@ -1,9 +1,21 @@
+#preloader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    object-fit: contain;
+    background: rgb(255, 255, 255) url("https://cdn.shopify.com/s/files/1/0762/7102/6477/files/loader.gif") center center / cover no-repeat;
+    display: none;
+}
+
 html {
     scroll-behavior: smooth;
-    background-color: whitesmoke;
+    background-color: #000000;
     font-family: "SF Mono", Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
     letter-spacing: 1.05px;
 }
+
+p, h1, h2, h3, html {color: white}
 
 #home, #store, #contact {
     height: 1000px;
@@ -48,7 +60,7 @@ nav a:hover {
 
 .store p {text-align: center;}
 
-.home p, {text-align: center;}
+.home p {text-align: center;}
 
 .home h2 {size: 5em;}
 

@@ -3,15 +3,16 @@
     <head>
         <meta charset="UTF-8">
         <title>Comstock</title>
-        <link rel="stylesheet" href="../project6 copy/styles.css">
-        <script src="../project6 copy/typewriter.js"></script>
-        <script src="../project6 copy/preloader.js"></script>
+        <link rel="stylesheet" href="../project6draft/styles.css">
+        <link rel="preload" as="image" href="../media/shirtback.png">
+        <link rel="preload" as="image" href="../media/hatback.png">
+        <script src="../project6draft/typewriter.js"></script>
+        <script src="../project6draft/preloader.js"></script>
+        <script src="../project6draft/countdown.js"></script>
     </head>
 
     <body>
-        <div id="preloader">
-            <div id="typedtext"></div>
-        </div>
+        <div id="preloader"></div>
         <header class="header">
             <div class="logo">
                 <a href="index.html" target="_top"> <img src="../media/logo2.png" alt="Comstock Customs" height="77"></a>
@@ -25,7 +26,7 @@
         <main>
             <section class="home" id="home">
                 <h1>Home</h1>
-                <h2>123 Days...</h2>
+                <h1 id="countdown"></h1>
                 <p><a href="store.html">View Catalogue</a></p>
                 <p><a href="https://www.instagram.com/comstockcustoms" target="_blank">Visit Instagram</a></p>
                 <div id="typedtext"></div>
