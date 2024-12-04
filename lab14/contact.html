@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="../lab14/styles.css">
+    <style>          
+      .row1, .row2 {display: flex; padding: 20px; margin: 20px; background-color: white; border-radius: 1em;}
+      .address, .email, .form, .map {margin: 10px;}
+      .address {flex: 1;}
+      .email {flex: 2;}
+      .form {order: 1; flex: 1;}
+      .map {order: 2; flex: 2; border-radius: 1em;}
+      .row2, iframe {flex-wrap: wrap;}
+    </style>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  </head>
+  
+  <body>
+    <nav>
+      <a href="index.html">Bio</a> <span>•</span> <a href="skills.html">Skills</a> <span>•</span> <a href="contact.html">Contact</a>
+    </nav>
+    <h1>Contact</h1>
+    <div class="row1">
+      <div class="address">      
+        <p>Ezra J Miller</p>
+        <p>737 Comstock Avenue, Syracuse, NY, 13210</p>
+      </div>
+      <div class="email">
+        <p><a href="mailto:ezmiller@syr.edu">ezmiller@syr.edu</a></p>
+        <p><a href="https://www.linkedin.com/in/ezrajmiller/" target="_top"> <img src="../images/LI-In-Bug-(sized).png" width="20" alt=""> LinkedIn Profile</a></p>
+      </div>
+    </div>
+    <div class="row2">
+      <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5832.3474666116745!2d-76.13195012379518!3d43.03777599201683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d9f37501606589%3A0x434ef3178a6424fa!2s737%20Comstock%20Ave%2C%20Syracuse%2C%20NY%2013210!5e0!3m2!1sen!2sus!4v1726176189446!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="form">
+        <form action="https://formspree.io/f/mgvwjonv" method="post">
+          <label for="message">Send me an email:</label><br>
+          <input type="text" name="message" id="message"><br>
+          <label for="box">Urgent</label>
+          <input type="checkbox" name="box" id="box"><br><br>
+          <input type="submit" value="Send Message">
+        </form>
+      </div>
+    </div>
+</body>
+</html>
