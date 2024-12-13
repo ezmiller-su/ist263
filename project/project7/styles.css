@@ -1,21 +1,23 @@
-#preloader {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    z-index: 999;
-    object-fit: contain;
-    background: rgb(255, 255, 255) url("https://cdn.shopify.com/s/files/1/0762/7102/6477/files/loader.gif") center center / cover no-repeat;
-    display: none;
-}
-
 html {
     scroll-behavior: smooth;
     background-color: #000000;
     font-family: "SF Mono", Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
     letter-spacing: 1.05px;
+    margin: 20px;
 }
 
 p, h1, h2, h3, html {color: white}
+
+main a {
+    text-decoration: none;
+    background: linear-gradient(115deg, #00d0ff, #09f 20%, #c95eff 42%, #ff2569 63%, #ff8300 83%, #ffb000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+a:hover {
+    text-decoration: underline 2px;
+}
 
 #home, #store, #contact {
     height: 1000px;
@@ -32,7 +34,11 @@ p, h1, h2, h3, html {color: white}
     height: 164px;
 }
 
-.logo, h1 {display: flex; justify-content: space-evenly; margin: 1em;}
+.logo, h1, h2, #typedtext {display: flex; justify-content: space-evenly; margin: 1em;}
+
+#contact p {text-align: center;}
+
+h2 {font-size: 10vw;}
 
 nav {display: flex;}
 
@@ -65,8 +71,6 @@ nav a:hover {
 
 .home p {text-align: center;}
 
-.home h2 {size: 5em;}
-
 .shirt .back {display: none;}
 .shirt:hover .front {display: none;}
 .shirt:hover .back {display: inline;}
@@ -76,3 +80,43 @@ nav a:hover {
 .hat:hover .front {display: none;}
 .hat:hover .back {display: inline;}
 .hat:hover p {text-decoration: underline;}
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }

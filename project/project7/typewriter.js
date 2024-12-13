@@ -1,12 +1,12 @@
-var aText = ["accessing", "comstock customs"];
-var iSpeed = 100; // Time delay of print out
-var iIndex = 0; // Start printing array at this position
-var iArrLength = aText[0].length; // Length of the text array
-var iScrollAt = 20; // Start scrolling up at this many lines
+var aText = ["The wait has begun..."];
+var iSpeed = 100;
+var iIndex = 0;
+var iArrLength = aText[0].length;
+var iScrollAt = 20;
 
-var iTextPos = 0; // Initialise text position
-var sContents = ''; // Initialise contents variable
-var iRow; // Initialise current row
+var iTextPos = 0;
+var sContents = '';
+var iRow;
 
 function typewriter() {
     sContents = ' ';

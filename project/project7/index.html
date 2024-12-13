@@ -2,13 +2,14 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Comstock</title>
         <link rel="stylesheet" href="../project7/styles.css">
         <link rel="preload" as="image" href="../media/shirtback.png">
         <link rel="preload" as="image" href="../media/hatback.png">
         <script src="../project7/typewriter.js"></script>
         <script src="../project7/preloader.js"></script>
+        <script src="../project7/modal.js"></script>
         <script src="../project7/countdown.js"></script>
     </head>
 
@@ -27,10 +28,10 @@
         <main>
             <section class="home" id="home">
                 <h1>Home</h1>
-                <h1 id="countdown"></h1>
-                <p><a href="store.html">View Catalogue</a></p>
-                <p><a href="https://www.instagram.com/comstockcustoms" target="_blank">Visit Instagram</a></p>
                 <div id="typedtext"></div>
+                <h2 id="countdown">00:00:00:00</h2>
+                <p><a href="#store">View Catalogue</a></p>
+                <p><a href="https://www.instagram.com/comstockcustoms" target="_blank">Visit Instagram</a></p>
             </section>
             
             <section class="store" id="store">
@@ -48,9 +49,16 @@
                     </div>
                 </div>
             </section>
+            
             <section class="contact" id="contact">
                 <h1>About Us</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quos reprehenderit quis eaque sed iste, necessitatibus officiis alias fuga deleniti harum dicta earum perferendis magnam esse porro, atque velit. Illo.</p>
+                <p>
+                    At Comstock Customs, our vision is to serve the Syracuse community with merchandise that captures its unique spirit and style. Over the next two years, from the fall of 2024 to our graduation in spring 2026, we aim to create four clothing drops that bring people together. These drops are more than apparel—they’re an expression of school pride, a celebration of local art, and a way to foster shared experiences. While we hope to generate revenue, profit is not the primary focus of these drops. Instead, we strive to blend culture, media, and art into something meaningful, rather than purely commercial.
+                    <br><br>
+                    As students at Syracuse University’s iSchool, this project is a chance to apply the skills we’ve gained—like building websites and databases, coding, and leveraging human-computer interaction principles. It’s also an opportunity to learn from professors, mentors, and entrepreneurs across disciplines like marketing, finance, and communication.
+                    <br><br>
+                    We view this venture as a hands-on learning experience, combining technical skills with the communication and adaptability required to succeed as entrepreneurs. Comstock Customs is not just a business; it’s our “100-credit course” in entrepreneurship and creativity, designed to grow alongside the Syracuse community we’re proud to be part of.
+                </p>
                 <div class="email">
                     Email:
                     <a href="mailto:ezrajmiller@hotmail.com">ezrajmiller@hotmail.com</a> <br><br>
@@ -61,5 +69,24 @@
             <hr>
             &copy; 2024, Comstock Customs
         </footer>
+    
+        <script>
+            var modal = document.getElementById("myModal");
+            var btn = document.getElementById("myBtn");
+            var span = document.getElementsByClassName("close")[0];
+            btn.onclick = function() {
+              modal.style.display = "block";
+            }
+            span.onclick = function() {
+              modal.style.display = "none";
+            }
+            window.onclick = function(event) {
+              if (event.target == modal) {
+                modal.style.display = "none";
+              }
+            }
+        </script>
+            
+    
     </body>
 </html>

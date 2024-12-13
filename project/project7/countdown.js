@@ -3,7 +3,7 @@ function formatTime(unit) {
     }
   
 // Set date
-var countDownDate = new Date("Dec 10, 2024 17:00:00").getTime();
+var countDownDate = new Date("Jan 1, 2025 17:00:00").getTime();
 
 // Update every second
 var x = setInterval(function() {
@@ -21,7 +21,7 @@ var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
 var seconds = Math.floor((distance % (1000 * 60)) / 1000);
     
 // Output
-document.getElementById("countdown").innerHTML = formatTime(days) + ":" + formatTime(hours) + ":" + formatTime(minutes) + ":" + formatTime(seconds) + "<br> DEC 10, 2024";
+document.getElementById("countdown").innerHTML = formatTime(days) + ":" + formatTime(hours) + ":" + formatTime(minutes) + ":" + formatTime(seconds);
     
 // At expiry
 if (distance < 0) {
