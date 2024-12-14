@@ -3,46 +3,36 @@ html {
     background-color: #000000;
     font-family: "SF Mono", Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
     letter-spacing: 1.05px;
-    margin: 20px;
 }
 
-p, h1, h2, h3, html {color: white}
-
-main a {
-    text-decoration: none;
-    background: linear-gradient(115deg, #00d0ff, #09f 20%, #c95eff 42%, #ff2569 63%, #ff8300 83%, #ffb000);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    
-}
-main a:hover {
-    text-decoration: underline 2px;
-}
-
-#home, #store, #contact {
-    height: 650px;
-    padding-top: 164px;
+body {
+    margin: 0;
+    padding: 0;
+    overflow: visible;
 }
 
 .header {
     background: linear-gradient(115deg,#00d0ff,#09f 20%,#c95eff 42%,#ff2569 63%,#ff8300 83%,#ffb000);
-
-    position: fixed;
+    height: min-content;
+    padding-top: 1em;
+    position: relative;
     left: 0;
     right: 0;
     top: 0;
-    height: 164px;
+    overflow: visible;
 }
 
-.logo, h1, h2, #typedtext {display: flex; justify-content: space-evenly; margin: 1em;}
+.logo {display: flex; justify-content: space-evenly;}
 
-#contact p {text-align: center;}
-
-h2 {font-size: 10vw;}
-
-nav {display: flex;}
-
-nav a {
+/* Nav */
+#nav {
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+     
+#nav a {
     flex: 1;
     background-color: #000000;
     color: #E8E8E8;
@@ -50,51 +40,103 @@ nav a {
     padding: 1em;
     display: inline-flex;
     justify-content: space-evenly;
-
     border-style: solid;
     border-width: 2px;
     border-color: antiquewhite;
 }
 
-nav a:hover {
+#nav a:hover {
     text-decoration: underline;
     background-color: #808080;
 }
+
+#home, #store, #contact {
+    height: 100vh;
+    padding-top: 3em;
+    
+}
+
+p, h1, h2, h3, html {color: white}
+p {text-align: center;}
+h2 {font-size: 10vw;}
+
+main a {
+    text-decoration: none;
+    background: linear-gradient(115deg, #00d0ff, #09f 20%, #c95eff 42%, #ff2569 63%, #ff8300 83%, #ffb000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+main a:hover {
+    text-decoration: underline 2px;
+}
+h1, h2, #typedtext {display: flex; justify-content: space-evenly; margin: 1em;}
 
 .stock {
     display: flex;
     justify-content: space-evenly;
 }
+
 .shirt, .hat {padding: 10px;}
-
-.store p {text-align: center;}
-
-.home p {text-align: center;}
-
 .shirt .back {display: none;}
 .shirt:hover .front {display: none;}
 .shirt:hover .back {display: inline;}
 .shirt:hover p {text-decoration: underline;}
-
 .hat .back {display: none;}
 .hat:hover .front {display: none;}
 .hat:hover .back {display: inline;}
 .hat:hover p {text-decoration: underline;}
 
+main {
+    margin: 0em 10em 0em 10em;
+}
+
+#contact p {
+    letter-spacing: 0.2px;
+}
+
 @media only screen and (max-width: 600px) {
     .header {
-        position: static;
-        height: auto;
-    }    
-    nav {
-        flex-direction: column;
-        position: sticky;
-        align-items: stretch;
-    nav a {width: 100%; padding: ;}
-    #home {padding-top: 250px;}
-    #home, #store, #contact {height: max-content;}
-    .shirt, .hat {
-        display: block;
-        margin-bottom: 20px;
+        position: fixed;
+        top: 0;
+        border-bottom: 2px antiquewhite solid;
     }
+    
+    #nav {
+        position: fixed;
+        top: auto;
+        bottom: 0;
+        width: 100%;
+    }
+
+    main {
+        margin: 0em 2em 3em 2em;
+    }
+
+    #home, #store, #contact {
+        padding-top: 7em;
+    }   
+
+    #home {
+        height: 70vh;
+    }   
+    
+    #contact p, .email {
+        font-size: .7em;
+    }
+
+    #store {
+        height: min-content;
+    }
+
+    .stock {
+        display: block;
+
+    }   
+
+    #contact {
+        height: min-content;
+    }
+
+
 }
